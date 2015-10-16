@@ -26,21 +26,22 @@
     </div>
   <% end %>
 
+  <!--form-groupはrowのようにコントロールできる-->
   <!--名前フーム-->
   <div class="form-group">
-    <%= f.label :name,'名前', class: 'col-sm-2 control-label' %>
     <span class="glyphicon glyphicon-user"></span>
-    <div class="col-sm-10">
+    <%= f.label :name,'名前:', class: 'col-sm-1 control-label' %>
+    <div class="col-sm-11">
       <%= f.text_field :name, class: 'form-control' %>
     </div>
   </div>
   
   <!--内容フーム-->
-  <div class="form-group">
-    <%= f.label :body,'内容', class: 'col-sm-2 control-label' %>
+  <div class="form-group ">
     <span class="glyphicon glyphicon-pencil"></span>
-    <div class="col-sm-10">
-    <%= f.text_area :body, class: 'form-control' , rows: 5 %>
+    <%= f.label :body,'内容:', class: 'col-sm-1 control-label' %>
+    <div class="col-sm-11">
+    <%= f.text_area :body, class: 'form-control' , rows: 10 %>
     </div>
   </div>
   <%= f.submit class: "btn btn-sm btn-primary" %>
