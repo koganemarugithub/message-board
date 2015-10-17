@@ -1,5 +1,6 @@
 source 'https://rubygems.org'
 
+gem 'rails_12factor', group: :production
 # cloudinary 画像ストレージ
 #gem 'cloudinary'
 # carriewave 画像アップロード用プラグイン
