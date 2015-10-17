@@ -1,9 +1,9 @@
 source 'https://rubygems.org'
 
 # cloudinary 画像ストレージ
-gem 'cloudinary'
+#gem 'cloudinary'
 # carriewave 画像アップロード用プラグイン
-gem 'carrierwave'
+#gem 'carrierwave'
 # デバックチェック用gem
 gem 'pry-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
