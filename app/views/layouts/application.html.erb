@@ -1,27 +1,97 @@
 <!DOCTYPE html>
-<html>
+<html lang="ja">
+
 <head>
+    <meta name="keywords" content="掲示板,プログラミング,RubyonRails,練習">
+    <meta name="description" content="名前と内容をインプットすると保存し表示されるメッセージボードです。">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Message-Board | Ruby on rails</title>
+    <!-- BootstrapのCSS読み込み -->
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <!-- jQuery読み込み -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- BootstrapのJS読み込み -->
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <!-- scrolltoの読み込み-->
+    <script src="/assets/jquery.scrollTo-a438e4b17f6d5f6fe56c32a45385308ee3f0f92cdff191cec9239acfe95b3fc3.js"></script>
+    
   <title>MessageBoard</title>
+  
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
+  
   <style>
-  .glyphicon{
+  nav{
+    background: rgba(255,255,255,0.7);
+    color:#337ab7;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  h1{
     font-size: 30px;
   }
+  
+  body{
+    background-image: url(/assets/msbg.jpg) ;
+    background-position: center
+  }
+  
+  #main_name{
+    left:100px ;
+  }
+  
+  .message_input{
+    background-color: rgba(255,255,255,0.7);
+  }
+  
+  .message_input{
+    padding: 10px 10px ;
+    
+  }
+  
+  .glyphicon{
+    font-size: 30px;
+    color:black;}
+  
+  .control-label{
+    color:black;
+  }
+  
+  footer {
+    margin-top: 20px;
+    border-top: 1px solid#e7e7e7;
+    background-color: rgba(255,255,255,0.7);
+    text-align: center;
+  }
+      
+  .copyright {
+    padding: 20px 0;
+    font-size: 12px;
+    color: #666;
+  
   </style>
 </head>
+
 <body>
-    <nav class="navbar">
+  <nav class="navbar">
     <div class="container">
       <div class="navbar-header">
-        <a class="navbar-brand" href="#">Message Board</a>
+        <h1>Message Board</h1>
+        </a>
       </div>
     </div>
   </nav>
-  <div class="container">
+  <div class="message_input container">
     <%= yield %>
   </div>
+  
+  <footer>
+    <div class="copyright">© 2015 Sunao Koganemaru</div>
+  </footer>
 </body>
+</html>
 </html>
