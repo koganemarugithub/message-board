@@ -5,4 +5,5 @@
 class User < ActiveRecord::Base
   #mount_uploader :avatar, AvatarUploader
  ####途中省略####
+ 
 end
