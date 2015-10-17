@@ -22,6 +22,17 @@
     </div>
   </div>
   <br />
+     
+   <!--年齢フーム-->
+  <div class="form-group">
+    <span class="glyphicon glyphicon-time"></span>
+    <%= f.label :age,'年齢:', class: 'col-sm-1 control-label' %>
+    <div class="col-sm-11">
+    <%= f.text_field :age, placeholder: '数値のみ入力可能', class: 'form-control' %>
+    </div>
+  </div>
+  <br />
+  
   <!--内容フーム-->
   <div class="form-group ">
     <span class="glyphicon glyphicon-pencil"></span>
@@ -30,6 +41,7 @@
     <%= f.text_area :body, class: 'form-control' , rows: 10 %>
     </div>
     <br />
+ 
     
     <div class=col-sm-1>
     </div>
