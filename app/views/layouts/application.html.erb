@@ -90,6 +90,12 @@
     </div>
   </nav>
   <div class="message_input container">
+    <% if notice %>
+      <div class="alert alert-info">
+        <%= notice %>
+      </div>
+    <% end %>
+        
     <%= yield %>
   </div>
   
