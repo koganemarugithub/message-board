@@ -1,11 +1,15 @@
 source 'https://rubygems.org'
 
-gem 'pry-rails'
 
+# デバックチェック用gem
+gem 'pry-rails'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.2.1'
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+# production=>本番環境用(posgress)　development=>開発用(sqlite3)　test=>テスト用
+# Use sqlite3 as the database for Active Record　開発環境用
+gem 'sqlite3', group: :development
+# 本番ではposgressを使用する
+gem 'pg', group: :production
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
