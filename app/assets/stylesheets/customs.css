@@ -1,0 +1,62 @@
+  nav{
+    background: rgba(255,255,255,0.7);
+    color:#337ab7;
+    text-align: center;
+    vertical-align: middle;
+  }
+  
+  h1{
+    font-size: 30px;
+  }
+  
+  body{
+    background-image: url('/assets/msbg.jpg') ;
+    background-position: center ;
+  }
+  
+  .label{
+    margin: 0 3px;
+  }
+  
+  .control-label{
+    color:black;
+    writing-mode: lr-tb;
+  }
+
+  .age{
+    background-color: #5bc0de ;
+  }
+  
+  .name{
+    background-color: orange;
+  }
+  
+  .label-body{
+    margin: 0 5px;
+  }
+  
+  .container{
+    background-color: rgba(255,255,255,0.7);
+    padding: 30px 30px;
+    margin: 30px 30px;
+  }
+  
+  .glyphicon{
+    font-size: 30px;
+    color:black;
+  }
+  
+
+  
+  footer {
+    margin-top: 20px;
+    border-top: 1px solid#e7e7e7;
+    background-color: rgba(255,255,255,0.7);
+    text-align: center;
+  }
+      
+  .copyright {
+    padding: 20px 0;
+    font-size: 12px;
+    color: #666;
+  }
