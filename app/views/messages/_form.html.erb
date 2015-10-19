@@ -14,54 +14,35 @@
   <% end %>
  
   <!--名前フーム-->
-  <div class="form-horizontal">
   <div class="form-group">
-    <div class: 'col-md-1 control-label'>
+    <div class: 'control-label'>
       <span class="glyphicon glyphicon-user"></span>
       <%= f.label :name,'名前:' %>
     </div>
-    <div class= 'col-md-11' >
-    <%= f.text_field :name, placeholder: '文字を入力', class: 'form-control' %>
-    </div>
+    <%= f.text_field :name, placeholder: '必須入力', size: "50" %>
   </div>
-  </div>
-  <br />
-  
+
    <!--年齢フーム-->
-  <div class="form-horizontal">
   <div class="form-group">
-    <div class: 'col-md-1 control-label'>
+    <div class: 'control-label'>
       <span class="glyphicon glyphicon-time"></span>
       <%= f.label :age,'年齢:' %>
     </div>
-    <div class: 'col-md-11'>
-    <%= f.text_field :age, placeholder: '数値を入力', class: 'form-control' %>
-    </div>
+    <%= f.text_field :age, placeholder: '必須入力_数値のみ', size: "50" %>
   </div>
-  </div>
-  <br />
-  
-  
+
   <!--内容フーム-->
-  <div class="form-horizontal">
+  
   <div class="form-group">
-    <div class: 'col-md-1 control-label'>
+    <div class: 'control-label'>
       <span class="glyphicon glyphicon-pencil"></span>
       <%= f.label :body,'内容:' %>
     </div>
-    <div class: 'col-md-11'>
-    <%= f.text_area :body, placeholder: '文字を2文字以上入力', class: 'form-control', rows: 10  %>
-    </div>
+    <%= f.text_area :body, placeholder: '必須入力_30文字以内', size: "50x3" %>
   </div>
-  </div>
-  <br />
   
   <!--create message-->
-  <div class=col-sm-1>
-  </div>
-    
-    <div class="col-sm-11">
+  <div class="form-group">
     <%= f.submit '反映する',  class: "btn btn-sm btn-primary" %>
-    </div>
   </div>
 <% end %>
