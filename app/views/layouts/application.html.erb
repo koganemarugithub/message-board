@@ -13,16 +13,11 @@
     <!-- jQuery読み込み -->
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     <!-- BootstrapのJS読み込み -->
-    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    <!-- scrolltoの読み込み-->
-    <script src="/assets/jquery.scrollTo-a438e4b17f6d5f6fe56c32a45385308ee3f0f92cdff191cec9239acfe95b3fc3.js"></script>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    <%= csrf_meta_tags %>
     
-  <title>MessageBoard</title>
-  
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-  
   <style>
   nav{
     background: rgba(255,255,255,0.7);
@@ -40,13 +35,14 @@
     background-position: center
   }
   
-  #main_name{
-    left:100px ;
-  }
-  
   .label{
     margin: 0 3px;
   }
+  
+  .control-label{
+  writing-mode: lr-tb;
+  }
+
   
   .label-body{
     margin: 0 5px;
@@ -57,8 +53,7 @@
   }
   
   .message_input{
-    padding: 10px 10px ;
-    
+    padding: 30px 30px ;
   }
   
   .glyphicon{
