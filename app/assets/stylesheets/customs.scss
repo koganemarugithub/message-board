@@ -10,7 +10,7 @@
   }
   
   body{
-    background-image: url('/assets/msbg.jpg') ;
+    background-image: image-url('msbg.jpg') ;
     background-position: center ;
   }
   
@@ -45,8 +45,6 @@
     font-size: 30px;
     color:black;
   }
-  
-
   
   footer {
     margin-top: 20px;
